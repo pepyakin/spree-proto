@@ -1,0 +1,8 @@
+[package]
+name = "spree-lamport-clock-primitives"
+version = "0.1.0"
+authors = ["Sergey Pepyakin <sergei@parity.io>"]
+edition = "2018"
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "1.1.0", features = ["derive"] }

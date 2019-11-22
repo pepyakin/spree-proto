@@ -1,0 +1,15 @@
+[package]
+name = "dummy-parachain"
+version = "0.1.0"
+authors = ["Sergey Pepyakin <sergei@parity.io>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+spree-lamport-clock-primitives = { path = "../spree-lamport-clock/primitives" }
+codec = { package = "parity-scale-codec", version = "1.1.0", features = ["derive"] }
+
+[profile.release]
+lto = true
